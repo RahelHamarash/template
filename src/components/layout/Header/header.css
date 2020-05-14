@@ -1,0 +1,36 @@
+
+.header{
+
+    display:flex ; 
+    height:100% ; 
+    width:100% ; 
+    align-items:center ; 
+    justify-content:space-between ;
+}
+
+.header-icons{
+
+    width:2vw ; 
+    height:2vh ;
+}
+
+@media screen and (max-width:750px){
+
+    .header-icons{
+
+        width: 15px;
+
+    }
+   
+}
+
+@media screen and (max-height:750px){
+
+    .header-icons{
+
+
+        height: 15px;
+    }
+   
+}
+

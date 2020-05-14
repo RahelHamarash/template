@@ -1,0 +1,89 @@
+.grid-container {
+    display: grid;
+    position: fixed;
+    width: 100vw ;
+    height:100vh ;
+    font-family: Nunito,sans-serif;
+
+  }
+  
+.Header { 
+    
+    height: 5vh;
+    width: 100vw;
+    grid-area: Header ; 
+    background-color: white;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+
+
+  
+/* .Footer { 
+
+    height: 5vh;
+    width: 100vw ;
+    grid-area: Footer ;
+    background-color: white;
+    -moz-box-shadow: 0 0 5px rgb(156, 156, 156);
+    -webkit-box-shadow: 0 0 5pxrgb(209, 209, 209);
+    box-shadow: 0 0 5px rgb(212, 212, 212);
+    position: relative !important;
+    visibility: visible;
+} */
+
+
+  
+.Sidebar { 
+    
+    height: 95vh ;
+    width: 3.2vw;
+    grid-area: Sidebar ; 
+    background-color:white;
+    border-radius: 0 .75rem .75rem 0 ;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+
+  
+.Content { 
+    
+    height: 95vh;
+    grid-area: Content ;
+    background-color: rgba(247, 247, 247, 0.842) ;
+    position: relative !important;
+    overflow-y: auto;
+}
+
+
+@media screen and (max-width:750px){
+
+    .Sidebar{
+
+        width: 24px ;
+    }
+    .Content{
+
+        width: calc(100vw - 24px);
+    }
+}
+
+
+@media screen and (max-height:750px){
+
+
+    .Header{
+
+        height:37.1875px;
+    }
+
+    /* .Footer{
+
+        
+        height:37.1875px ;
+    } */
+}

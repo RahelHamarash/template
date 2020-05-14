@@ -1,0 +1,54 @@
+.sidebar-items{
+
+    margin-bottom: .5vh;
+    display:flex ; 
+    flex-direction:column ;
+    margin-top:.5vh ;
+    align-items: center;
+
+}
+
+.sidebar-icons{
+
+
+    width:2.2vw ;
+    height:2.2vh ;
+
+
+}
+
+.sidebar-texts{
+
+    color:#212121 ; 
+    font-size:.55vw  ;
+
+}
+
+
+@media screen and (max-width:750px){
+
+    .sidebar-icons{
+
+        width: 16.5px;
+
+    }
+
+    .sidebar-texts{
+
+        font-size:4.125px; 
+
+
+    }
+
+   
+}
+
+@media screen and (max-height:750px){
+
+    .sidebar-icons{
+
+        height: 16.5px;
+
+    }
+   
+}
